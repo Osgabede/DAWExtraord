@@ -16,4 +16,4 @@ jobs:
           branch: gh-pages
 
       - name: Copy to S3
-        run: aws s3 cp index.html s3://dawextraord-bucket/index.html --region "us-east-1"
+        run: aws s3 cp index.html s3://dawextraord-bucket/index.html --region "us-east-1" --debug
