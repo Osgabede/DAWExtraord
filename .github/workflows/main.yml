@@ -14,3 +14,6 @@ jobs:
         with:
           folder: .
           branch: gh-pages
+
+      - name: Copy to S3
+        run: aws s3 sync . s3://dawextraord-bucket --delete
