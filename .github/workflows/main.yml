@@ -16,4 +16,4 @@ jobs:
           branch: gh-pages
 
       - name: Copy to S3
-        run: aws s3 cp . s3://dawextraord-bucket/index.html --recursive --exclude ".git*" --debug
+        run: aws s3 cp index.html s3://dawextraord-bucket/index.html
