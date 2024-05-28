@@ -16,4 +16,4 @@ jobs:
           branch: gh-pages
 
       - name: Copy to S3
-        run: aws s3 sync . s3://dawextraord-bucket --delete
+        run: aws s3 sync . s3://arn:aws:s3:us-east-1:186201076320:accesspoint/myaccesspoint --region us-east-1 --delete
